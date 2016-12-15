@@ -1,5 +1,5 @@
 {
-  "name": "request-header-parser",
+  "name": "who-am-i",
   "version": "1.0.0",
   "description": "parses resquest's headers I guess",
   "main": "app.js",
@@ -11,5 +11,16 @@
     "header"
   ],
   "author": "Richard Turza",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richtone/request-header-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/richtone/request-header-parser/issues"
+  },
+  "homepage": "https://github.com/richtone/request-header-parser#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }

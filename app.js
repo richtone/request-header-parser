@@ -7,11 +7,11 @@ express()
 .set('port', pe_Port)
 .get("/", (req, res) => {
     
-    let response = {"ipadress" : "res.ip"};
+    let response = {"ipadress" : req.connection.remoteAddress};
     
     res.header("Content-Type", "application/json; charset=utf-8");
     res.end(JSON.stringify(response));
 })
 .listen(pe_Port, () => {
-   console.log("whoAmI running on port ", pe_Port) 
+   console.log("whoAmI running on port ", pe_Port)
 });

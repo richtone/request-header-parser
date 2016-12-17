@@ -7,7 +7,7 @@ express()
 .set('port', pe_Port)
 .get("/", (req, res) => {
     
-    let response = {"ipadress" : req.connection.remoteAddress};
+    let response = {"ipadress" : req.header('x-forwarded-for')};
     
     res.header("Content-Type", "application/json; charset=utf-8");
     res.end(JSON.stringify(response));

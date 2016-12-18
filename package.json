@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/richtone/request-header-parser#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "useragent": "^2.1.9",
+    "useragent.js": "^0.5.4"
   }
 }
